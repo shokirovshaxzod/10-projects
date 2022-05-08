@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/tims.jpg");
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: bisque;
+  background-color: rgb(198, 221, 160);
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+div {
+  margin-bottom: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 98, 255, 0.386);
+  border-radius: 10px 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 98, 255, 0.5);
+  border-radius: 50px;
+}
+
+@keyframes text {
+  to {
+    color: rgb(31, 60, 85);
+    transform: translateY(-100%);
+  }
+
+  50% {
+    color: rgb(13, 121, 121);
+  }
+}
+
+h1 {
+  font-weight: 800rem;
+  font-size: 5rem;
+  color: rgb(10, 80, 141);
+  font-weight: normal;
+  margin-top: 5rem;
+}
+
+.countdown-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.big-text {
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 1rem 2rem;
+}
+
+#seconds {
+  animation: text 1s linear infinite;
+}
+
+.countdown-el {
+  text-align: center;
+}
+
+.countdown-el span {
+  font-size: 1.3rem;
+}
